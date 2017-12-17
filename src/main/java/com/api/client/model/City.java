@@ -15,7 +15,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Entity
 @Table(name = "city")
-public class City {
+public class City{
 	
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Id
@@ -28,27 +28,27 @@ public class City {
 	@JsonIgnore
 	private List<Client> clients;
 
-	public Long getId() {
+	public Long getId(){
 		return id;
 	}
 
-	public void setId(Long id) {
+	public void setId(Long id){
 		this.id = id;
 	}
 
-	public String getName() {
+	public String getName(){
 		return name;
 	}
 
-	public void setName(String name) {
+	public void setName(String name){
 		this.name = name;
 	}
 
-	public List<Client> getClients() {
+	public List<Client> getClients(){
 		return clients;
 	}
 
-	public void setClients(List<Client> clients) {
+	public void setClients(List<Client> clients){
 		this.clients = clients;
 	}				
 }

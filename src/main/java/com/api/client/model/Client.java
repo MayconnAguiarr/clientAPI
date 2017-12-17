@@ -20,7 +20,7 @@ import com.fasterxml.jackson.annotation.JsonInclude.Include;
 
 @Entity
 @Table(name = "client")
-public class Client {
+public class Client{
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -53,55 +53,55 @@ public class Client {
 		return id;
 	}
 
-	public void setId(Long id) {
+	public void setId(Long id){
 		this.id = id;
 	}
 
-	public String getName() {
+	public String getName(){
 		return name;
 	}
 
-	public void setName(String name) {
+	public void setName(String name){
 		this.name = name;
 	}
 
-	public String getCpf() {
+	public String getCpf(){
 		return cpf;
 	}
 
-	public void setCpf(String cpf) {
+	public void setCpf(String cpf){
 		this.cpf = cpf;
 	}
 
-	public String getAddress() {
+	public String getAddress(){
 		return address;
 	}
 
-	public void setAddress(String address) {
+	public void setAddress(String address){
 		this.address = address;
 	}
 
-	public Date getBirthDate() {
+	public Date getBirthDate(){
 		return birthDate;
 	}
 
-	public void setBirthDate(Date birthDate) {
+	public void setBirthDate(Date birthDate){
 		this.birthDate = birthDate;
 	}
 
-	public String getObs() {
+	public String getObs(){
 		return obs;
 	}
 
-	public void setObs(String obs) {
+	public void setObs(String obs){
 		this.obs = obs;
 	}
 
-	public City getCity() {
+	public City getCity(){
 		return city;
 	}
 
-	public void setCity(City city) {
+	public void setCity(City city){
 		this.city = city;
 	}		
 }

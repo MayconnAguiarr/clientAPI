@@ -10,35 +10,35 @@ public class DetailsErro {
 
 	private String messageDeveloper;
 
-	public String getTitle() {
+	public String getTitle(){
 		return title;
 	}
 
-	public void setTitle(String title) {
+	public void setTitle(String title){
 		this.title = title;
 	}
 
-	public Long getStatus() {
+	public Long getStatus(){
 		return status;
 	}
 
-	public void setStatus(Long status) {
+	public void setStatus(Long status){
 		this.status = status;
 	}
 
-	public Long getTimeStamp() {
+	public Long getTimeStamp(){
 		return timeStamp;
 	}
 
-	public void setTimeStamp(Long timeStamp) {
+	public void setTimeStamp(Long timeStamp){
 		this.timeStamp = timeStamp;
 	}
 
-	public String getMessageDeveloper() {
+	public String getMessageDeveloper(){
 		return messageDeveloper;
 	}
 
-	public void setMessageDeveloper(String messageDeveloper) {
+	public void setMessageDeveloper(String messageDeveloper){
 		this.messageDeveloper = messageDeveloper;
 	}		
 }

@@ -1,6 +1,7 @@
 package com.api.client.handler;
 
 import org.apache.catalina.servlet4preview.http.HttpServletRequest;
+
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -14,11 +15,11 @@ import com.api.client.service.exceptions.ClientExistingException;
 import com.api.client.service.exceptions.ClientNotFoundException;
 
 @ControllerAdvice
-public class RestExceptionHandler {
+public class RestExceptionHandler{
 
 	@ExceptionHandler(ClientNotFoundException.class)
 	public ResponseEntity<DetailsErro> handlerClientNotFoundException(ClientNotFoundException e,
-			HttpServletRequest request) {
+			HttpServletRequest request){
 
 		DetailsErro erro = new DetailsErro();
 		erro.setStatus(404l);
@@ -31,7 +32,7 @@ public class RestExceptionHandler {
 
 	@ExceptionHandler(ClientExistingException.class)
 	public ResponseEntity<DetailsErro> handlerClientExistingException(ClientExistingException e,
-			HttpServletRequest request) {
+			HttpServletRequest request){
 
 		DetailsErro erro = new DetailsErro();
 		erro.setStatus(409l);
@@ -44,7 +45,7 @@ public class RestExceptionHandler {
 
 	@ExceptionHandler(CityNotFoundException.class)
 	public ResponseEntity<DetailsErro> handlerCityNotFoundException(CityNotFoundException e,
-			HttpServletRequest request) {
+			HttpServletRequest request){
 
 		DetailsErro erro = new DetailsErro();
 		erro.setStatus(404l);
@@ -57,7 +58,7 @@ public class RestExceptionHandler {
 
 	@ExceptionHandler(CityExistingException.class)
 	public ResponseEntity<DetailsErro> handlerCityExistingException(CityExistingException e,
-			HttpServletRequest request) {
+			HttpServletRequest request){
 
 		DetailsErro erro = new DetailsErro();
 		erro.setStatus(409l);
@@ -70,7 +71,7 @@ public class RestExceptionHandler {
 
 	@ExceptionHandler(DataIntegrityViolationException.class)
 	public ResponseEntity<DetailsErro> handleDataIntegrityViolationException(DataIntegrityViolationException e,
-			HttpServletRequest request) {
+			HttpServletRequest request){
 
 		DetailsErro erro = new DetailsErro();
 		erro.setStatus(400l);
