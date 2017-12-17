@@ -1,0 +1,10 @@
+.mvn/
+.classpath
+.project
+.settings/
+config
+target/
+mvnw
+mvnw.cmd
+../config
+
