@@ -2,9 +2,9 @@
 .classpath
 .project
 .settings/
-config
+myConfig
 target/
 mvnw
 mvnw.cmd
-../config
+
 
