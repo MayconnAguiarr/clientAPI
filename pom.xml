@@ -4,12 +4,12 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.api</groupId>
-	<artifactId>cliente</artifactId>
+	<artifactId>clientAPI</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>cliente</name>
-	<description>Demo project for Spring Boot</description>
+	<name>clientAPI</name>
+	<description> Project clientAPI</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -60,14 +60,14 @@
 			<scope>runtime</scope>
 		</dependency>
 
-		<!-- varias funcionalidade, usando restart automático sem precisar fazer 
+		<!-- várias funcionalidade, usando restart automático sem precisar fazer 
 			manualmente -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
 		</dependency>
 
-		<!-- adicionado passibilidade de trabalhar com xml, default é json -->
+		<!-- adicionado possibilidade de trabalhar com xml, default é json -->
 		<dependency>
 			<groupId>com.fasterxml.jackson.dataformat</groupId>
 			<artifactId>jackson-dataformat-xml</artifactId>
