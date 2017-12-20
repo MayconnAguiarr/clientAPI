@@ -2,7 +2,7 @@
 
 ## Objetivo
    Após estudos sobre API(Application Programming Interface), esse repositório foi criado para fins didáticos.
-   Essa API tem por ojetivo consultar, cadastrar, atualizar e deletar clientes.
+   Essa API tem por objetivo consultar, cadastrar, atualizar e deletar clientes.
    
 ## Tecnologias usadas  
    Rest java <br>
